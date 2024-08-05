@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버거리스트</title>
+</head>
+<body>
+ <h1>버거리스트</h1>
+<h2>일단 목록 전체를 가져오기 </h2>
+ {% for burger in burgers %}
+    <div>
+        이름 : {{ burger.name }}
+        가격 : {{ burger.price }}원,
+        칼로리 : {{ burger.calories }}kcal
+    </div>     
+ {% endfor %}
+
+</body>
+</html>
